@@ -58,8 +58,8 @@ from email.mime.text import MIMEText
 from email.utils import COMMASPACE, formatdate
 from email import encoders
 
-gmail_user = 'support@logintap.com'
-gmail_password = 'nXvUblDCJryTMP1SSsjd'
+gmail_user = 'test@sender.com'
+gmail_password = '1111'
 sent_from = gmail_user
 
 
@@ -263,8 +263,8 @@ def fromBase():
         
 pgdb = 'great_paraser'
 pguser = 'postgres'
-pgpswd = 'postgres'
-pghost = '10.72.1.117'
+pgpswd = '111'
+pghost = '10.1.1.117'
 pgport = '5432'
 # pgschema = 'great_paraser'
 max_process_count = 2
@@ -416,17 +416,9 @@ def main33(siteData0,siteData1,siteData2):
         encodedcontent = base64.b64encode(filecontent)  # base64
 
 
-        to = ['jirdis@ya.ru']#,'alex@mobsted.com'
-        subject = 'No passwords on '+siteData1+'?' # '+siteData1+'
-        body = 'Hi, I found your email on '+siteData1+', when studying how Shopify shops work with logins and passwords for clients.\
-\
-Do you think you can have a look at the screenshot I made for your shops login page? Does it make sense to rid clients of logins and passwords to make shopping easier?\
-\
-\Please view letter attachment\
-\
-\I would be glad to talk it over if you like the idea, or if you think talks are useless you can see more on the biometric login for Shopify  - logintapm.com/shop.\
-\
-If you have no interest in learning if this can help - (let me know) and I will erase you from my Shopify research.'
+        to = ['test@ya.ru']#
+        subject = 'bala' 
+        body = 'balabla'
 
         send_mail(sent_from,to,subject,body,files,'smtp.yandex.ru',465,gmail_user,gmail_password);#ssl://
         print('exit '+siteData1)
